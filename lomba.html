@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomba Vlogging SMP - Interesting Facts about Serang City</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card {
+            background-color: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #667eea;
+            border: 3px solid white;
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #1a202c;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Hero Section -->
+    <header class="gradient-bg text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-6 text-center">
+            <h1 class="text-2xl md:text-4xl font-extrabold leading-tight mb-2">Lomba Vlogging SMP</h1>
+            <p class="text-sm md:text-base font-semibold">Tema: "Interesting Facts about Serang City"</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Intro Text -->
+        <section class="text-center mb-12">
+            <p class="max-w-3xl mx-auto text-base text-gray-700">
+                Menguatkan keterampilan komunikasi verbal Bahasa Inggris pada siswa SMP melalui format vlogging yang sederhana dan edukatif.
+            </p>
+        </section>
+
+        <!-- Countdown Timer -->
+        <section id="countdown-section" class="mb-16">
+             <div class="gradient-bg rounded-3xl p-6 text-white text-center">
+                <h2 class="text-2xl font-bold mb-3">Pendaftaran Ditutup Dalam</h2>
+                <div id="countdown" class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-lg mx-auto">
+                    <div class="countdown-box p-3 rounded-xl">
+                        <span id="days" class="text-3xl font-bold">00</span>
+                        <p class="text-xs">Hari</p>
+                    </div>
+                    <div class="countdown-box p-3 rounded-xl">
+                        <span id="hours" class="text-3xl font-bold">00</span>
+                        <p class="text-xs">Jam</p>
+                    </div>
+                    <div class="countdown-box p-3 rounded-xl">
+                        <span id="minutes" class="text-3xl font-bold">00</span>
+                        <p class="text-xs">Menit</p>
+                    </div>
+                    <div class="countdown-box p-3 rounded-xl">
+                        <span id="seconds" class="text-3xl font-bold">00</span>
+                        <p class="text-xs">Detik</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Info Section -->
+        <section class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div class="card text-center">
+                <div class="text-5xl text-indigo-500 mb-4">👥</div>
+                <h3 class="text-xl font-bold mb-2">Kategori</h3>
+                <p class="text-gray-600">Individual - Siswa SMP kelas 7-9</p>
+            </div>
+            <div class="card text-center">
+                <div class="text-5xl text-indigo-500 mb-4">⏱️</div>
+                <h3 class="text-xl font-bold mb-2">Durasi</h3>
+                <p class="text-gray-600">Maksimum 3 menit (ketat)</p>
+            </div>
+            <div class="card text-center">
+                <div class="text-5xl text-indigo-500 mb-4">💬</div>
+                <h3 class="text-xl font-bold mb-2">Bahasa</h3>
+                <p class="text-gray-600">Minimal 70% Bahasa Inggris lisan</p>
+            </div>
+            <div class="card text-center">
+                <div class="text-5xl text-indigo-500 mb-4">🏆</div>
+                <h3 class="text-xl font-bold mb-2">Hadiah</h3>
+                <p class="text-gray-600">Sertifikat & Uang Tunai</p>
+            </div>
+        </section>
+        
+        <!-- Timeline Section -->
+        <section class="mb-16">
+            <h2 class="section-title">Linimasa Lomba</h2>
+            <div class="max-w-2xl mx-auto relative">
+                <div class="absolute left-0 h-full border-l-2 border-dashed border-gray-300" style="left: -20px;"></div>
+                <div class="timeline-item pl-8 mb-8 relative">
+                    <h4 class="font-bold text-lg text-indigo-600">Pendaftaran Peserta</h4>
+                    <p class="text-sm text-gray-500">19 September - 10 Oktober 2025</p>
+                    <p class="text-gray-700">Peserta melakukan pendaftaran secara online melalui link dari panitia.</p>
+                </div>
+                <div class="timeline-item pl-8 mb-8 relative">
+                    <h4 class="font-bold text-lg text-indigo-600">Pengumpulan Naskah & Video</h4>
+                    <p class="text-sm text-gray-500">Maksimal 25 Oktober 2025</p>
+                    <p class="text-gray-700">Upload video ke Youtube dan kirimkan link beserta naskah melalui form panitia.</p>
+                </div>
+                <div class="timeline-item pl-8 mb-8 relative">
+                    <h4 class="font-bold text-lg text-indigo-600">Penilaian Karya</h4>
+                    <p class="text-sm text-gray-500">31 Oktober - 3 November 2025</p>
+                    <p class="text-gray-700">Dewan juri akan melakukan penilaian terhadap semua karya yang masuk.</p>
+                </div>
+                <div class="timeline-item pl-8 relative">
+                    <h4 class="font-bold text-lg text-indigo-600">Pengumuman Juara</h4>
+                    <p class="text-sm text-gray-500">6 November 2025</p>
+                    <p class="text-gray-700">Pengumuman pemenang akan dilaksanakan dan 3 video terbaik akan ditayangkan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rules & Regulations Section -->
+        <section class="mb-16">
+            <h2 class="section-title">Aturan & Ketentuan</h2>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Ketentuan Umum -->
+                <div class="card">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Ketentuan Umum</h3>
+                    <ul class="space-y-3 text-gray-700 list-inside list-disc">
+                        <li>Peserta: Siswa SMP dan Perorangan (individu) bukan kelompok.</li>
+                        <li>Durasi Maksimal 3 menit, Video lebih dari durasi = diskualifikasi.</li>
+                        <li>Konten harus relevan dengan tema: fakta menarik tentang Kota Serang (sejarah, budaya, landmark, dll.).</li>
+                        <li>Minimal 70% durasi berbicara harus menggunakan Bahasa Inggris lisan. (Wawancara diperbolehkan 30%).</li>
+                        <li>Tidak menampilkan adegan berbahaya, melgarang hukum, atau etika/religius.</li>
+                        <li>Musik latar harus bebas hak cipta dan sumbernya dicantumkan.</li>
+                    </ul>
+                </div>
+                <!-- Ketentuan Teknis -->
+                <div class="card">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Ketentuan Teknis Vlog</h3>
+                    <ul class="space-y-3 text-gray-700 list-inside list-disc">
+                        <li>Isi naskah tidak mengandung unsur SARA, pornografi, dan diskriminasi.</li>
+                        <li>Format file: MP4 (rekomendasi) atau MOV.</li>
+                        <li>Resolusi: Minimal 720p (1280x720), format Landscape.</li>
+                        <li>Ukuran file maksimal: 500 MB.</li>
+                        <li>Penamaan file: <strong>Nama_Sekolah_Kelas_Title.mp4</strong>.</li>
+                        <li>Kualitas audio harus jelas dan mudah dipahami.</li>
+                        <li>Watermark hanya boleh logo sekolah, bukan logo pribadi.</li>
+                        <li>Naskah Vlog harus orisinil (Arial, Font 14).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kriteria Penilaian Section -->
+        <section class="mb-16">
+            <h2 class="section-title">Kriteria Penilaian</h2>
+            <div class="space-y-4 max-w-4xl mx-auto">
+                <div class="card">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-bold text-indigo-700">English Communication</h4>
+                        <span class="text-2xl font-bold text-indigo-500">40%</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t text-gray-600">
+                        <p><strong>Excellent (9-10):</strong> Bicara lancar, suara jelas, hampir tidak ada kesalahan.</p>
+                        <p><strong>Good (7-8):</strong> Umumnya jelas, ada sedikit kesalahan tapi mudah dimengerti.</p>
+                        <p><strong>Fair (5-6):</strong> Ada jeda atau kesalahan, tapi masih bisa dipahami.</p>
+                        <p><strong>Weak (0-4):</strong> Sulit diikuti, banyak kesalahan, kurang jelas.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-bold text-indigo-700">Content & Accuracy</h4>
+                        <span class="text-2xl font-bold text-indigo-500">20%</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t text-gray-600">
+                         <p><strong>Excellent (9-10):</strong> Isi sangat sesuai tema, fakta benar semua, ada contoh kuat.</p>
+                        <p><strong>Good (7-8):</strong> Isi cukup sesuai, fakta sebagian besar benar, ada contoh meski sederhana.</p>
+                        <p><strong>Fair (5-6):</strong> Isi agak sesuai, ada fakta kurang tepat, contoh terbatas.</p>
+                        <p><strong>Weak (0-4):</strong> Isi tidak sesuai, banyak fakta salah, hampir tanpa contoh.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-bold text-indigo-700">Presentation & Delivery</h4>
+                        <span class="text-2xl font-bold text-indigo-500">25%</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t text-gray-600">
+                        <p><strong>Excellent (9-10):</strong> Ada pembukaan-isi-penutup yang jelas, percaya diri, ekspresif.</p>
+                        <p><strong>Good (7-8):</strong> Struktur cukup jelas, ada rasa percaya diri, ekspresi lumayan.</p>
+                        <p><strong>Fair (5-6):</strong> Struktur kurang rapi, suara datar, kurang percaya diri.</p>
+                        <p><strong>Weak (0-4):</strong> Tidak ada struktur jelas, penyampaian lemah, monoton.</p>
+                    </div>
+                </div>
+                 <div class="card">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-bold text-indigo-700">Creativity & Engagement</h4>
+                        <span class="text-2xl font-bold text-indigo-500">15%</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t text-gray-600">
+                         <p><strong>Excellent (9-10):</strong> Sangat menarik, gaya asli/unik, penonton merasa terhubung.</p>
+                        <p><strong>Good (7-8):</strong> Ada sedikit kreativitas, penonton cukup tertarik.</p>
+                        <p><strong>Fair (5-6):</strong> Kreativitas terbatas, penonton kurang terlibat.</p>
+                        <p><strong>Weak (0-4):</strong> Tidak ada kreativitas, penonton bosan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Info & CTA -->
+        <section class="text-center">
+             <h2 class="section-title">Siap Berkompetisi?</h2>
+             <p class="max-w-2xl mx-auto text-gray-700 mb-8">
+                Tunjukkan kreativitasmu dan ceritakan fakta menarik tentang Kota Serang kepada dunia!
+                Upload karyamu ke YouTube dan kirimkan linknya melalui tombol di bawah ini.
+             </p>
+             <a href="https://forms.gle/xqM7z5xAhjhYidB39" target="_blank" class="inline-block gradient-bg text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:scale-105 transform transition-transform duration-300">
+                Kirim Karya Sekarang
+             </a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Lomba Vlogging SMP Kota Serang</h3>
+                    <p class="text-sm text-gray-400">Seluruh karya yang dikirimkan menjadi hak milik panitia.</p>
+                </div>
+                <div>
+                     <p>Keputusan juri adalah mutlak dan tidak dapat diganggu gugat.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            // Set the date we're counting down to
+            const countDownDate = new Date("Oct 10, 2025 23:59:59").getTime();
+
+            // Update the count down every 1 second
+            const countdownInterval = setInterval(function() {
+
+                // Get today's date and time
+                const now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                const distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the elements
+                const daysEl = document.getElementById("days");
+                const hoursEl = document.getElementById("hours");
+                const minutesEl = document.getElementById("minutes");
+                const secondsEl = document.getElementById("seconds");
+
+                if (daysEl) daysEl.innerText = String(days).padStart(2, '0');
+                if (hoursEl) hoursEl.innerText = String(hours).padStart(2, '0');
+                if (minutesEl) minutesEl.innerText = String(minutes).padStart(2, '0');
+                if (secondsEl) secondsEl.innerText = String(seconds).padStart(2, '0');
+
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(countdownInterval);
+                    const countdownSection = document.getElementById("countdown-section");
+                    if(countdownSection) {
+                        countdownSection.innerHTML = `
+                        <div class="gradient-bg rounded-3xl p-8 text-white text-center">
+                            <h2 class="text-3xl font-bold">Pendaftaran Telah Ditutup</h2>
+                        </div>`;
+                    }
+                }
+            }, 1000);
+        })();
+    </script>
+
+</body>
+</html>
+
+
